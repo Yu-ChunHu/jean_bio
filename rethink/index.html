@@ -9,20 +9,39 @@
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
     </style>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body class="bg-slate-50 text-slate-800 leading-relaxed">
 
     <!-- Hero Section -->
-    <header class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white py-20 px-6 text-center">
-        <div class="max-w-3xl mx-auto">
-            <span class="bg-emerald-500 text-xs uppercase tracking-widest px-3 py-1 rounded-full font-semibold">Hello RE-THINK!</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-6">我是胡育群 Jean Hu</h1>
-            <p class="text-lg md:text-xl text-emerald-100 font-light">
-                擁有十多年科技業經驗，曾任研發工程師及 Team lead ，具備跨國溝通與專案管理能力。長期投入獨立寫作、繪圖與影音創作，探索個人、環境、心理健康、多元共融等議題。尋求將技術背景與人文關懷整合的職
-涯轉換，期望在環境永續領域發揮所長。
-            </p>
+    <section class="bg-gradient-to-r from-teal-800 to-emerald-700 text-white p-8 md:p-12 rounded-2xl shadow-lg">
+        <!-- 限制最大寬度為 max-w-4xl 並置中 (mx-auto)，讓兩邊更靠中一些 -->
+        <div class="max-w-4xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12">
+            
+            <!-- 左側：文字介紹 -->
+            <div class="space-y-4 flex-1 text-center md:text-left">
+                <span class="bg-teal-600/50 text-teal-200 text-xs px-3 py-1 rounded-full font-medium tracking-wider uppercase">
+                    Hello RE-THINK!
+                </span>
+                <h1 class="text-3xl md:text-5xl font-black tracking-tight">
+                    我是胡育群 Jean Hu
+                </h1>
+                <p class="text-teal-100 max-w-xl text-sm md:text-base leading-relaxed">
+                    擁有十多年科技業經驗，曾任研發工程師及 Team lead ，具備跨國溝通與專案管理能力。長期投入獨立寫作、繪圖與影音創作，探索個人、環境、心理健康、多元共融等議題。尋求將技術背景與人文關懷整合的職 涯轉換，期望在環境永續領域發揮所長。
+                </p>
+            </div>
+            
+            <!-- 右側：個人頭貼（尺寸放大） -->
+            <div class="flex-shrink-0">
+                <!-- 調整寬高為 w-40 h-40 (手機版) 到 md:w-52 md:h-52 (電腦版)，讓圖片更大 -->
+                <div class="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-white/30 shadow-xl bg-white/10 backdrop-blur-sm">
+                    <!-- 請將 img/avatar.jpg 替換為你的頭貼路徑 -->
+                    <img src="../img/avatar.jpeg" alt="Jean's Portrait" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
         </div>
-    </header>
+    </section>
 
     <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
         <!-- Standard Resume Sections (學歷、專長、工作經歷) -->
