@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>胡育群 Jean Hu | 資深數位產品經理 應徵履歷</title>
+    <!-- 引入極簡現代風 CSS 框架 Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // 設定天下雜誌專屬紅白藍色調的擴充顏色
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cw: {
+                            red: '#C11F1F',    /* 天下經典紅 */
+                            blue: '#003399',   /* 訂閱按鈕/超連結藍 */
+                            dark: '#111111',   /* 標題深黑 */
+                            gray: '#F4F5F7'    /* 乾淨灰底 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif; }
+    </style>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-slate-50 text-slate-800 leading-relaxed">
+
+    <!-- Hero Section (天下的紅白藍視覺) -->
+    <section class="bg-white border-t-4 border-cw-red border-b border-slate-200 p-8 md:p-12 shadow-sm">
+        <div class="max-w-4xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12">
+            
+            <!-- 左側：文字介紹 -->
+            <div class="space-y-4 flex-1 text-center md:text-left">
+                <span class="bg-cw-red/10 text-cw-red text-xs px-3 py-1 rounded font-bold tracking-wider uppercase">
+                    Hello 天下雜誌數位發展部!
+                </span>
+                <h1 class="text-3xl md:text-5xl font-black tracking-tight text-cw-dark">
+                    我是胡育群 Jean Hu
+                </h1>
+                <p class="text-cw-red text-lg font-bold tracking-wide">
+                    科技業的邏輯與專案控管 ✕ 自媒體獨立內容創作經驗
+                </p>
+                <p class="text-slate-600 max-w-xl text-sm md:text-base leading-relaxed text-justify">
+                    擁有十多年科技業經驗，曾任研發工程師、Team Lead 與 Scrum Master，具備敏捷開發管理與資料分析邏輯。同時投入自媒體圖文與影音創作。我渴望將技術背景與人文關懷整合，協助天下雜誌推動人機協作的數位變革。
+                </p>
+            </div>
+            
+            <!-- 右側：個人頭貼 -->
+            <div class="flex-shrink-0">
+                <div class="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-slate-100 shadow-lg bg-cw-gray">
+                    <img src="../img/avatar.jpeg" alt="Jean's Portrait" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+        
+        <!-- Standard Resume Sections (基本資料、工作經歷) -->
+        <section id="profile" class="space-y-6">
+            <h2 class="text-2xl font-bold text-cw-dark border-l-4 border-cw-red pl-3">基本資料</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 bg-white p-8 rounded-xl shadow-sm border border-slate-200/60">
+              <!-- 左欄：學歷與專長 -->
+              <div class="md:col-span-1 space-y-6">
+                  <!-- 學歷 -->
+                  <div>
+                      <h3 class="text-lg font-bold text-cw-dark border-b-2 border-cw-red pb-2 mb-3">🎓 學歷背景</h3>
+                      <p class="font-bold text-slate-900 text-sm">長庚大學</p>
+                      <p class="text-slate-500 text-xs mt-0.5">資訊工程學系</p>
+                      <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-medium">2010 - 2014</span>
+                  </div>
+
+                  <!-- 核心專長 -->
+                  <div>
+                      <h3 class="text-lg font-bold text-cw-dark border-b-2 border-cw-red pb-2 mb-3">⚡ 核心專長</h3>
+                      <ul class="space-y-3 text-sm text-slate-600">
+                          <li class="flex items-start gap-1.5">
+                              <span class="text-cw-red font-bold">✓</span> 
+                              <span><strong>專案管理：</strong>敏捷流程導入、產品 Backlog 管理、時程與優先順序控管</span>
+                          </li>
+                          <li class="flex items-start gap-1.5">
+                              <span class="text-cw-red font-bold">✓</span> 
+                              <span><strong>自動化流程：</strong>串連 AI，自動化工作流重構</span>
+                          </li>
+                          <li class="flex items-start gap-1.5">
+                              <span class="text-cw-red font-bold">✓</span> 
+                              <span><strong>軟體工程：</strong>具備資工與科技業背景，精通系統架構與資料流，能成為與技術團隊間的溝通橋樑</span>
+                          </li>
+                          <li class="flex items-start gap-1.5">
+                              <span class="text-cw-red font-bold">✓</span> 
+                              <span><strong>內容創作：</strong>具獨立自媒體圖文、影音創作經驗</span>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <!-- 右欄：工作經歷 -->
+              <div class="md:col-span-2 space-y-6">
+                  <h3 class="text-lg font-bold text-cw-dark border-b-2 border-cw-red pb-2 mb-3">💼 工作經歷</h3>
+                  
+                  <!-- 趨勢科技經歷 -->
+                  <div class="relative border-l-2 border-slate-200 pl-4 pb-4">
+                      <div class="absolute -left-[7px] top-1.5 w-3 h-3 bg-cw-red rounded-full"></div>
+                      <div class="flex justify-between items-start flex-wrap gap-1">
+                          <h4 class="font-bold text-slate-900">趨勢科技股份有限公司</h4>
+                          <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-medium">2018 - 2025</span>
+                      </div>
+                      <p class="text-sm font-semibold text-cw-blue mt-0.5">主任工程師 兼 Scrum Master</p>
+                      
+                      <ul class="mt-3 space-y-2 text-xs text-slate-600 list-disc list-inside pl-1 text-justify">
+                          <li>帶領研發團隊，在遠端與非同步環境下控管專案時程與進行跨國/跨部門溝通。</li>
+                          <li>重構系統與工作流程，建立 MVP 快速驗證迭代，降低系統維護與溝通成本。</li>
+                          <li>擔任技術端、產品端與客戶端的轉譯者，擅長將生硬、複雜的技術邏輯，轉譯為可落地的產品需求。</li>
+                      </ul>
+                  </div>
+
+                  <!-- 昕力資訊 -->
+                  <div class="relative border-l-2 border-slate-200 pl-4 pb-4">
+                      <div class="absolute -left-[7px] top-1.5 w-3 h-3 bg-slate-400 rounded-full"></div>
+                      <div class="flex justify-between items-start flex-wrap gap-1">
+                          <h4 class="font-bold text-slate-900">昕力資訊</h4>
+                          <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-medium">2014 - 2018</span>
+                      </div>
+                      <p class="text-sm font-semibold text-cw-blue mt-0.5">軟體工程師</p>
+                      <ul class="mt-2 space-y-1 text-xs text-slate-600 list-disc list-inside pl-1">
+                          <li>派駐於多元企業環境，適應快節奏工作文化，累積豐富的跨系統整合與問題解決思維。</li>
+                      </ul>
+                  </div>
+
+                  <!-- 自由創作經歷 -->
+                  <div class="relative border-l-2 border-slate-200 pl-4 pb-4">
+                      <div class="absolute -left-[7px] top-1.5 w-3 h-3 bg-cw-blue rounded-full"></div>
+                      <div class="flex justify-between items-start flex-wrap gap-1">
+                          <h4 class="font-bold text-slate-900">內容創作</h4>
+                          <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-medium">長期經營</span>
+                      </div>
+                      <p class="text-sm font-semibold text-cw-blue mt-0.5">圖文及影音創作</p>
+                      
+                      <ul class="mt-3 space-y-2 text-xs text-slate-600 list-disc list-inside pl-1 text-justify">
+                          <li><strong>方格子沙龍「奎比說故事」：</strong>累積 30 多篇圖文創作，透過故事討論社會議題及深入思辨。</li>
+                          <li><strong>YouTube 頻道「蠻子與奎比躁動中」：</strong>負責旅遊影音企劃、長短片剪輯與自媒體社群經營。</li>
+                      </ul>
+                  </div>
+
+                  <!-- 志工經歷 -->
+                  <div class="relative border-l-2 border-slate-200 pl-4">
+                      <div class="absolute -left-[7px] top-1.5 w-3 h-3 bg-slate-400 rounded-full"></div>
+                      <div class="flex justify-between items-start flex-wrap gap-1">
+                          <h4 class="font-bold text-slate-900">小貓呼嚕送養中心</h4>
+                          <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-medium">2025 - 現在</span>
+                      </div>
+                      <p class="text-sm font-semibold text-cw-blue mt-0.5">貓咪中途志工</p>
+                      <ul class="mt-2 space-y-1 text-xs text-slate-600 list-disc list-inside pl-1">
+                          <li>負責待領養貓咪的長期照護，鍛鍊出耐心溝通與危機處理特質。</li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Core Strengths Section (對接天下的產品管理需求) -->
+        <section id="experience" class="space-y-6">
+            <h2 class="text-2xl font-bold text-cw-dark border-l-4 border-cw-red pl-3">產品管理需求對接</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200/60 flex gap-4">
+                    <div class="text-3xl">🏗️</div>
+                    <div>
+                        <h3 class="text-lg font-bold text-cw-dark">1. 敏捷思維與數位產品迭代 (Agile / Scrum Master)</h3>
+                        <p class="text-slate-600 text-sm mt-1 text-justify">具備科技業 Scrum 實務，擅長將創新想法收斂成可執行的 MVP。能與跨部門夥伴在資訊不完整、變動快的創新實驗階段，釐清 Backlog 優先順序，同步執行多個專案。</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200/60 flex gap-4">
+                    <div class="text-3xl">🤖</div>
+                    <div>
+                        <h3 class="text-lg font-bold text-cw-dark">2. 串接 AI 與自動化流程</h3>
+                        <p class="text-slate-600 text-sm mt-1 text-justify">具備資料分析能力。我能快速理解天下的官網、App、訂閱與會員日常場景，利用自動化工具與 API 設計，免除重複性例行成本，簡化工作流。</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200/60 flex gap-4">
+                    <div class="text-3xl">🤝</div>
+                    <div>
+                        <h3 class="text-lg font-bold text-cw-dark">3. 溝通協調能力</h3>
+                        <p class="text-slate-600 text-sm mt-1 text-justify">能將複雜的資料轉化為產品決策依據；與跨團隊夥伴溝通，共同擁抱數位變革。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Side Project Section (PoC 概念驗證：完美對接天下對 Make / AI 工作流的要求) -->
+        <section id="side-project" class="space-y-6">
+            <div class="flex items-center gap-3 flex-wrap">
+                <h2 class="text-2xl font-bold text-cw-dark border-l-4 border-cw-red pl-3">概念實作：生成式 AI ✕ 工作流自動化標記系統</h2>
+                <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-0.5 rounded font-semibold">PoC 概念驗證</span>
+            </div>
+            <p class="text-slate-600 text-sm">呼應天下雜誌對「應用 AI 翻轉流程」的期待，我使用自動化工作流平台 Make 與 Gemini AI 串接，模擬出如何免除人工分析的PoC：</p>
+            <p class="text-cw-red font-bold text-center text-sm bg-cw-red/5 py-2 rounded">※ 核心效益：自動化工作流程，讓團隊專注於價值產出 ※</p>
+            
+            <div class="grid md:grid-cols-3 gap-4 text-center">
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200/60">
+                    <div class="text-cw-blue font-bold text-base mb-2">1. 數據觸發 (Trigger)</div>
+                    <p class="text-xs text-slate-500">當一線人員在 Google Sheet 填入新營運成效或內容資料數據。</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200/60 border-t-4 border-t-cw-red">
+                    <div class="text-cw-red font-bold text-base mb-2">2. AI 大腦分析 (AI Process)</div>
+                    <p class="text-xs text-slate-500">工作流自動將資料拋給大語言模型，由 AI 自動進行成效等級判斷與生成優化建議。</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200/60">
+                    <div class="text-cw-blue font-bold text-base mb-2">3. 自動化回寫 (Output)</div>
+                    <p class="text-xs text-slate-500">系統即時將 AI 分析的標籤與增長策略寫回 Google Sheet。</p>
+                </div>
+            </div>
+
+            <div class="mt-8 space-y-6">
+                <h3 class="text-lg font-bold text-cw-dark flex items-center gap-2">
+                    <span>📊 PoC 實機運行成果展示</span>
+                </h3>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="space-y-2">
+                        <p class="text-xs font-semibold text-slate-700">1. 數據資料填入</p>
+                        <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white p-2">
+                            <img src="img/before.png" alt="原始數據輸入" class="w-full h-auto object-cover rounded-lg">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-xs font-semibold text-slate-700">2. Make 自動化工作流架構運行</p>
+                        <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white p-2">
+                            <img src="img/run_auto.png" alt="Make工作流串接" class="w-full h-auto object-cover rounded-lg">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-xs font-semibold text-slate-700">3. AI 自動分析並回寫優化建議</p>
+                        <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white p-2">
+                            <img src="img/after.png" alt="AI自動化成果" class="w-full h-auto object-cover rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯絡與社群連結 -->
+        <section class="text-center space-y-4 pt-4 border-t border-slate-200">
+            <h2 class="text-xl font-bold text-cw-dark">Let's Connect!</h2>
+            <p class="text-slate-500 text-sm">歡迎點閱我的自媒體創作，或透過以下管道與我聯繫面談：</p>
+            <div class="flex flex-wrap justify-center gap-6 text-sm font-semibold text-cw-blue mt-2">
+                <a href="mailto:yuchun801130@gmail.com" class="hover:text-cw-red transition underline" target="_blank">Email 信箱</a>
+                <a href="https://tw.linkedin.com/in/jean-hu" class="hover:text-cw-red transition underline" target="_blank">LinkedIn</a>
+                <a href="https://vocus.cc/salon/creebie_story" class="hover:text-cw-red transition underline" target="_blank">Vocus 方格子（奎比說故事）</a>
+                <a href="https://www.youtube.com/@manzie.creebie" class="hover:text-cw-red transition underline" target="_blank">YouTube 頻道</a>
+                <a href="https://github.com/Yu-ChunHu" class="hover:text-cw-red transition underline" target="_blank">GitHub</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cw-dark text-slate-400 py-12 text-center text-sm border-t border-slate-800">
+        <p class="mb-2">胡育群 Jean Hu | 期待與天下雜誌夥伴共同在 AI 時代創造信任與商業價值</p>
+        <p class="text-slate-600 text-xs">Powered by GitHub Pages, Tailwind CSS & Generative AI Mindset</p>
+    </footer>
+
+    <!-- 技術彩蛋符合天下雜誌職缺 -->
+    <script>
+        console.log("%c👋 哈囉！天下雜誌數位發展部的開發者、PM 或 HR 夥伴！", "color: #C11F1F; font-size: 20px; font-weight: bold;");
+        console.log("當你看到這行 console.log，代表我模擬的產品用戶追蹤自訂事件已成功發送：");
+        console.log("gtag('event', 'read_jean_resume_success', { 'ai_mindset_score': '100%', 'scrum_master_fit': 'true' });");
+        console.log("期待與你們面試深聊！");
+    </script>
+</body>
+</html>
