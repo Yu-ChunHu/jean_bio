@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>胡育群 Jean Hu | PressPlay Academy 產品經理 應徵履歷</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // 設定 PressPlay 官方集團標準視覺色調
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pp: {
+                            bg: '#050C16',      /* 官網極致深藍黑底色 */
+                            card: '#0D1B2A',    /* 卡片深藍夜空色 */
+                            orange: '#F2A93B',  /* 標誌性朝陽橘黃 */
+                            accent: '#00E5FF',  /* 亮青科技點綴色 */
+                            text: '#E2E8F0',    /* 內文清晰灰白 */
+                            muted: '#94A3B8'    /* 說明文字灰 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-pp-bg text-pp-text leading-relaxed">
+
+    <!-- 頂部導覽列：複刻 PressPlay 集團極致深藍質感 -->
+    <header class="bg-pp-bg/90 border-b border-slate-800/80 px-6 py-4 sticky top-0 z-50 backdrop-blur-md shadow-lg">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <!-- 模擬 Logo 顏色 -->
+                <span class="text-pp-orange font-black tracking-widest text-lg md:text-xl flex items-center gap-1">
+                    <span>▶</span> PressPlay <span class="text-white font-light text-base hidden md:inline">Academy</span>
+                </span>
+                <span class="text-pp-muted text-xs font-light hidden sm:inline">| 產品經理 Product Manager 應徵</span>
+            </div>
+            <a href="mailto:yuchun801130@gmail.com" class="bg-pp-orange hover:bg-orange-500 text-slate-950 text-xs font-bold px-4 py-2 rounded shadow-md transition flex items-center gap-1">
+                🚀 聯繫我
+            </a>
+        </div>
+    </header>
+
+    <!-- 頂部 Banner：複刻官網大氣沈穩的 Content for Next Generation 氛圍 -->
+    <section class="relative bg-gradient-to-b from-pp-card via-pp-bg to-pp-bg text-white p-8 md:p-16 border-b border-slate-800 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(242,169,59,0.08),transparent_50%)]"></div>
+        
+        <div class="max-w-4xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12 relative z-10">
+            <!-- 左側：文字介紹 -->
+            <div class="space-y-4 flex-1 text-center md:text-left">
+                <span class="bg-pp-orange/10 text-pp-orange text-xs px-3 py-1 rounded font-bold tracking-wider uppercase border border-pp-orange/20">
+                  【知識】產品設計部｜產品經理 Product Manager
+                </span>
+                <h1 class="text-3xl md:text-5xl font-black tracking-tight text-white pt-2">
+                    我是胡育群 Jean Hu
+                </h1>
+                <p class="text-pp-orange text-base md:text-lg font-bold tracking-wide">
+                    科技業邏輯思維 ✕ 自媒體人文關懷
+                </p>
+                <p class="text-pp-muted max-w-2xl text-sm md:text-base leading-relaxed text-justify">
+                    資工背景出身，擁有科技業研發工程師與 Scrum Master 實戰資歷。另外獨立經營自媒體內容創作。我渴望將自身對科技的敏感度、AI 工作流的重構經驗，以及對內容創作者生態的理解注入 PPA，打造流暢的數位學習體驗。
+                </p>
+            </div>
+            
+            <!-- 右側：個人頭貼 -->
+            <div class="flex-shrink-0">
+                <div class="w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden border-2 border-slate-700 shadow-2xl bg-pp-card hover:border-pp-orange transition-colors">
+                    <img src="../img/avatar.jpeg" alt="Jean's Portrait" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+        <!-- 2. 基本資料與學歷專長 Section -->
+        <section id="profile" class="space-y-6">
+            <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                <span class="w-2 h-6 bg-pp-orange"></span>
+                <h2 class="text-xl md:text-2xl font-bold tracking-wider uppercase text-white">基本資料 & 工作經歷</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 bg-pp-card p-8 rounded-2xl border border-slate-800">
+                <!-- 左欄：學歷與工具箱 -->
+                <div class="md:col-span-1 space-y-6">
+                    <!-- 學歷 -->
+                    <div>
+                        <h3 class="text-sm font-bold text-pp-orange tracking-widest uppercase mb-3 flex items-center gap-2">🎓 學歷背景</h3>
+                        <p class="font-bold text-white text-base">長庚大學</p>
+                        <p class="text-pp-muted text-xs mt-0.5">資訊工程學系</p>
+                        <span class="text-[10px] bg-slate-800 text-pp-orange px-2 py-0.5 rounded font-mono border border-slate-700/60 inline-block mt-2">2010 - 2014</span>
+                    </div>
+
+                    <!-- 專業特質 -->
+                    <div>
+                        <h3 class="text-sm font-bold text-pp-orange tracking-widest uppercase mb-3 flex items-center gap-2">💡 特質</h3>
+                        <ul class="space-y-2 text-xs text-pp-muted">
+                            <li class="flex items-start gap-1.5"><span class="text-pp-orange">▪</span> <span><strong>創作者與用戶共感：</strong>商務溝通能力，對接創作者社群與學員核心痛點。</span></li>
+                            <li class="flex items-start gap-1.5"><span class="text-pp-orange">▪</span> <span><strong>敏捷交付思維：</strong>聚焦 MVP 快速實作、測試與數據回饋。</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- 工具箱 -->
+                    <div>
+                        <h3 class="text-sm font-bold text-pp-orange tracking-widest uppercase mb-3 flex items-center gap-2">🛠️ PM 工具箱</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-slate-800 text-pp-text text-[11px] px-2 py-1 rounded border border-slate-700">GA4 / SQL</span>
+                            <span class="bg-slate-800 text-pp-text text-[11px] px-2 py-1 rounded border border-slate-700">A/B Testing</span>
+                            <span class="bg-slate-800 text-pp-text text-[11px] px-2 py-1 rounded border border-slate-700">Scrum / Jira</span>
+                            <span class="bg-slate-800 text-pp-text text-[11px] px-2 py-1 rounded border border-slate-700">PRD 規格撰寫</span>
+                            <span class="bg-slate-800 text-pp-text text-[11px] px-2 py-1 rounded border border-slate-700">AI 工作流重構</span>
+                            <span class="bg-slate-800 text-pp-text text-[11px] px-2 py-1 rounded border border-slate-700">Canva / Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右欄：完整經歷地圖 -->
+                <div class="md:col-span-2 space-y-6">
+                    <h3 class="text-sm font-bold text-pp-orange tracking-widest uppercase mb-3 flex items-center gap-2">💼 工作經歷</h3>
+                    <div class="space-y-6 relative before:absolute before:inset-0 before:left-2 before:w-0.5 before:bg-slate-800">
+                        
+                        <!-- 趨勢科技等大廠 -->
+                        <div class="relative pl-6 group">
+                            <span class="absolute left-0.5 top-1.5 w-3.5 h-3.5 rounded-full bg-pp-orange border-4 border-pp-card group-hover:scale-110 transition-transform"></span>
+                            <div class="space-y-1">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-1">
+                                    <h4 class="font-bold text-white text-base">趨勢科技股份有限公司</h4>
+                                    <span class="text-pp-orange font-mono font-semibold">2018 - 2025</span>
+                                </div>
+                                <p class="text-xs font-semibold text-pp-muted">研發主任工程師 兼 Team Lead</p>
+                                <ul class="mt-2 space-y-1 text-xs text-pp-muted list-disc list-inside text-justify pl-1">
+                                    <li>帶領研發團隊，主導多個專案(0 -> 1, 1 -> n)，規劃軟體生命週期，建立敏捷開發流程與高可用性監控機制。</li>
+                                    <li>擔任技術端、產品端與客戶端之間的溝通橋樑，具備優秀的中英文商務應對與跨國多團隊的利益對齊能力。</li>
+                                    <li>導入 AI 工具進行團隊內部工作自動化，重構並優化日常工作流。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 昕力資訊 -->
+                        <div class="relative pl-6 group">
+                            <span class="absolute left-0.5 top-1.5 w-3.5 h-3.5 rounded-full bg-slate-700 border-4 border-pp-card group-hover:scale-110 transition-transform"></span>
+                            <div class="space-y-1">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-1">
+                                    <h4 class="font-bold text-white text-base">昕力資訊</h4>
+                                    <span class="text-pp-muted font-mono">2014 - 2018</span>
+                                </div>
+                                <p class="text-xs font-semibold text-pp-muted">軟體工程師</p>
+                                <ul class="mt-2 space-y-1 text-xs text-pp-muted list-disc list-inside text-justify pl-1">
+                                    <li>派駐於不同指標型企業客戶端，負責複雜跨系統之資料結構整合、系統架構維護及文件資料處理。</li>
+                                    <li>面對多變的客戶需求，鍛鍊出敏捷的系統適應力與主動發現問題、排除阻礙的解決能力。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 自由創作 -->
+                        <div class="relative pl-6 group">
+                            <span class="absolute left-0.5 top-1.5 w-3.5 h-3.5 rounded-full bg-pp-orange border-4 border-pp-card group-hover:scale-110 transition-transform"></span>
+                            <div class="space-y-1">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-1">
+                                    <h4 class="font-bold text-white text-base">自媒體創作（圖文 & 影音內容）</h4>
+                                    <span class="text-pp-orange font-mono font-semibold">長期經營</span>
+                                </div>
+                                <p class="text-xs font-semibold text-pp-muted">方格子沙龍「奎比說故事」/ YouTube 頻道「蠻子與奎比躁動中」經營</p>
+                                <ul class="mt-2 space-y-1 text-xs text-pp-muted list-disc list-inside text-justify pl-1">
+                                    <li>獨立負責自媒體內容策略、文案撰寫、影音腳本編寫與剪輯（熟練 Canva、CapCut 與社群經營）。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 志工經歷 -->
+                        <div class="relative pl-6 group">
+                            <span class="absolute left-0.5 top-1.5 w-3.5 h-3.5 rounded-full bg-slate-700 border-4 border-pp-card group-hover:scale-110 transition-transform"></span>
+                            <div class="space-y-1">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-1">
+                                    <h4 class="font-bold text-white text-base">小貓呼嚕送養中心</h4>
+                                    <span class="text-pp-muted font-mono">2025 - 現在</span>
+                                </div>
+                                <p class="text-xs font-semibold text-pp-muted">中途志工</p>
+                                <ul class="mt-2 space-y-1 text-xs text-pp-muted list-disc list-inside text-justify pl-1">
+                                    <li>長期投入第一線貓咪中途照顧與認養對接，在公益服務中磨練出極致的用戶行為細心度、觀察力與人際共感特質。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. 核心能力對接 Section (Core Strengths Match) -->
+        <section id="match" class="space-y-6">
+            <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                <span class="w-2 h-6 bg-pp-orange"></span>
+                <h2 class="text-xl md:text-2xl font-bold tracking-wider uppercase text-white">PPA 產品經理 核心能力對接</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- 留存與數據 -->
+                <div class="bg-pp-card p-6 rounded-xl border border-slate-800/80 hover:border-pp-orange transition group flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-pp-orange font-mono font-bold text-xs tracking-widest uppercase">STRATEGY & DATA</div>
+                        <h3 class="text-white font-bold text-base group-hover:text-pp-orange transition-colors">用戶留存分析與數據優化</h3>
+                        <p class="text-pp-muted text-xs leading-relaxed text-justify">
+                            具備完整軟體開發生命週期視野，能緊扣 OKR 規劃流量模型，運用 A/B Testing 驗證成效。
+                        </p>
+                    </div>
+                </div>
+                <!-- AI與創新 -->
+                <div class="bg-pp-card p-6 rounded-xl border border-slate-800/80 hover:border-pp-orange transition group flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-pp-orange font-mono font-bold text-xs tracking-widest uppercase">AI & INNOVATION</div>
+                        <h3 class="text-white font-bold text-base group-hover:text-pp-orange transition-colors">AI 驅動創新與產品迭代</h3>
+                        <p class="text-pp-muted text-xs leading-relaxed text-justify">
+                            能結合 AI 技術進行工作流重構，更能撰寫出兼顧技術可行性與商業目標的 PRD。
+                        </p>
+                    </div>
+                </div>
+                <!-- 敏捷協作與跨職能 -->
+                <div class="bg-pp-card p-6 rounded-xl border border-slate-800/80 hover:border-pp-orange transition group flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-pp-orange font-mono font-bold text-xs tracking-widest uppercase">AGILE & COLLABORATION</div>
+                        <h3 class="text-white font-bold text-base group-hover:text-pp-orange transition-colors">敏捷管理與溝通</h3>
+                        <p class="text-pp-muted text-xs leading-relaxed text-justify">
+                            具備帶領工程團隊經驗。擅長主持產品會議、排除開發障礙。適應遠端跨國/跨團隊非同步協作，能以最高透明度同步資訊，扮演非技術部門與工程團隊間的橋樑。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯絡與社群連結 -->
+        <section class="text-center space-y-4">
+            <h2 class="text-lg font-bold text-white">Let's Create Change Together!</h2>
+            <p class="text-pp-muted text-xs">歡迎透過以下管道與我聯繫，期待與 PressPlay 團隊攜手，用影響力顛覆傳統數位學習生態：</p>
+            <div class="flex justify-center flex-wrap gap-6 text-xs font-medium mt-2">
+                <a href="mailto:yuchun801130@gmail.com" class="text-pp-text hover:text-pp-orange hover:underline transition" target="_blank">✉️ Email</a>
+                <a href="https://tw.linkedin.com/in/jean-hu" class="text-pp-text hover:text-pp-orange hover:underline transition" target="_blank">🔗 LinkedIn</a>
+                <a href="https://vocus.cc/salon/creebie_story" class="text-pp-text hover:text-pp-orange hover:underline transition" target="_blank">✍️ 方格子沙龍</a>
+                <a href="https://www.youtube.com/@manzie.creebie" class="text-pp-text hover:text-pp-orange hover:underline transition" target="_blank">🎥 YouTube</a>
+                <a href="https://github.com/Yu-ChunHu" class="text-pp-text hover:text-pp-orange hover:underline transition" target="_blank">💻 GitHub</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pp-card text-pp-muted py-12 text-center text-xs border-t border-slate-800">
+        <p class="mb-2 text-white font-medium">胡育群 Jean Hu | 期待加入 PressPlay Academy 產品團隊，活在變化，創造變化，成為變化</p>
+        <p class="text-slate-600">Powered by GitHub Pages & Tailwind CSS</p>
+    </footer>
+</body>
+</html>
