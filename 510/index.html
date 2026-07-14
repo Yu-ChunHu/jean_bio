@@ -8,6 +8,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        /* 自訂細緻的動畫過場 */
+        .modal-animate-in {
+            animation: fadeIn 0.2s ease-out forwards;
+        }
+        .content-animate-in {
+            animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
     </style>
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
@@ -15,7 +30,6 @@
 
     <!-- 頂部 Banner：改為一起夢想的活潑深色調，搭配蜜桃紅邊框 -->
     <section class="bg-stone-900 text-white p-8 md:p-12 rounded-2xl shadow-lg border-b-4 border-rose-500">
-        <!-- 限制最大寬度為 max-w-4xl 並置中 (mx-auto) -->
         <div class="max-w-4xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12">
             
             <!-- 左側：文字介紹 -->
@@ -76,7 +90,7 @@
                           </li>
                           <li class="flex items-start gap-1.5">
                               <span class="text-rose-500 font-bold">✓</span> 
-                              <span><strong>內容創作：</strong>圖文撰寫、影音製作、社群經營</span>
+                              <span><strong>內容創作：</strong>图文撰寫、影音製作、社群經營</span>
                           </li>
                           <li class="flex items-start gap-1.5">
                               <span class="text-rose-500 font-bold">✓</span> 
@@ -90,11 +104,11 @@
               <div class="md:col-span-2 space-y-6">
                   <h3 class="text-lg font-bold text-stone-950 border-b-2 border-rose-500 pb-2 mb-3">💼 工作經歷</h3>
                   
-                  <!-- 趨勢科技經歷 -->
+                  <!-- 跨國大廠經歷 -->
                   <div class="relative border-l-2 border-stone-200 pl-4 pb-2">
                       <div class="absolute -left-[7px] top-1.5 w-3 h-3 bg-rose-500 rounded-full"></div>
                       <div class="flex justify-between items-start flex-wrap gap-1">
-                          <h4 class="font-bold text-stone-900">趨勢科技股份有限公司</h4>
+                          <h4 class="font-bold text-stone-900">跨國科技大廠</h4>
                           <span class="text-xs bg-stone-100 text-stone-600 px-2 py-0.5 rounded font-medium">2018 - 2025</span>
                       </div>
                       <p class="text-sm font-medium text-rose-500 mt-0.5">主任工程師 兼 Tech Lead / Scrum Master</p>
@@ -132,7 +146,7 @@
                       <p class="text-sm font-medium text-rose-500 mt-0.5">獨立文字創作者 / 議題轉譯者</p>
                       
                       <ul class="mt-3 space-y-1.5 text-xs text-stone-600 list-disc list-inside pl-1">
-                          <li><strong>方格子沙龍「奎比說故事」：</strong>累積30多篇圖文創作，內容多以傳說故事延伸當代社會思考。</li>
+                          <li><strong>方格子沙龍「奎比說故事」：</strong>內容多以傳說故事延伸當代社會思考。</li>
                           <li><strong>YouTube 頻道「蠻子與奎比躁動中」：</strong>製作旅遊紀錄影片（包含長片與短影音）。</li>
                       </ul>
                   </div>
@@ -145,16 +159,90 @@
                           <span class="text-xs bg-stone-100 text-stone-600 px-2 py-0.5 rounded font-medium">2025 - 現在</span>
                       </div>
                       <p class="text-sm font-medium text-rose-500 mt-0.5">貓咪中途志工</p>
-                      
                       <ul class="mt-3 space-y-1.5 text-xs text-stone-600 list-disc list-inside pl-1">
-                          <li>照護待領養貓咪。</li>
+                          <li>第一線投入志工服務與貓咪中途照顧，在實踐中培養極高的細心度與非營利組織運作同理心。</li>
                       </ul>
                   </div>
               </div>
             </div>
         </section>
 
-        <!-- Core Strengths Section：滑鼠懸停時改為淡粉色邊框框線 -->
+        <!-- 📂 專案作品集實績 Section：點擊可觸發彈窗輪播 -->
+        <section id="portfolio" class="space-y-6">
+            <div class="flex items-center justify-between">
+                <h2 class="text-2xl font-bold text-stone-900">📂 專案作品集實績</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- 1. 數字敏銳與邏輯收斂 -->
+                <div onclick="openModal(1)" class="bg-white p-6 rounded-xl shadow-sm border border-stone-200 flex flex-col justify-between hover:border-rose-500 hover:shadow-md transition cursor-pointer group">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-rose-500 bg-rose-50 px-2.5 py-1 rounded-full border border-rose-100">數字敏銳度 & 邏輯收斂</span>
+                        </div>
+                        <h3 class="text-base font-bold text-stone-900 mt-3 group-hover:text-rose-500 transition-colors">專案管理 & 數據分析</h3>
+                        <p class="text-stone-600 text-xs mt-2 text-justify leading-relaxed">
+                            負責控管團隊的多項並行專案。在雜亂、非同步的資訊中，透過敏捷看板進行任務拆解與時程控管。對數據具敏銳度，擅長進行產能數據分析，將複雜問題收斂為具體行動方案。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-stone-100 text-[11px] text-rose-500 font-semibold flex items-center justify-between">
+                        <span>🔍 點擊展開</span>
+                    </div>
+                </div>
+
+                <!-- 2. 主動出擊與多元日常任務 -->
+                <div onclick="openModal(2)" class="bg-white p-6 rounded-xl shadow-sm border border-stone-200 flex flex-col justify-between hover:border-rose-500 hover:shadow-md transition cursor-pointer group">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-rose-500 bg-rose-50 px-2.5 py-1 rounded-full border border-rose-100">主動出擊 & 多元任務承擔</span>
+                        </div>
+                        <h3 class="text-base font-bold text-stone-900 mt-3 group-hover:text-rose-500 transition-colors">自媒體獨立營運 & 承接多元任務</h3>
+                        <p class="text-stone-600 text-xs mt-2 text-justify leading-relaxed">
+                            獨立經營圖文創作與 YouTube 頻道。一人承擔從文案撰寫、腳本企劃到多媒體剪輯，這段實績證明我具備獨立運作能力。另外，作為 Team Lead 跟駐點經驗，需要處理臨時交辦下來的事物，快速吸收並且承接跨域專案。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-stone-100 text-[11px] text-rose-500 font-semibold flex items-center justify-between">
+                        <span>🔍 點擊展開</span>
+                    </div>
+                </div>
+
+                <!-- 3. AI 工具實際應用經驗 -->
+                <div onclick="openModal(3)" class="bg-white p-6 rounded-xl shadow-sm border border-stone-200 flex flex-col justify-between hover:border-rose-500 hover:shadow-md transition cursor-pointer group">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-rose-500 bg-rose-50 px-2.5 py-1 rounded-full border border-rose-100">流程自動化</span>
+                        </div>
+                        <h3 class="text-base font-bold text-stone-900 mt-3 group-hover:text-rose-500 transition-colors">AI 工作流重構</h3>
+                        <p class="text-stone-600 text-xs mt-2 text-justify leading-relaxed">
+                            熟練運用 Claude、Gemini、ChatGPT 等工具。曾導入 AI 進行大型老舊專案的追蹤、數據自動化整理；在自媒體上則利用 AI 加速背景知識的資料研究。能實際應用於日常任務，為團隊省下人工時間。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-stone-100 text-[11px] text-rose-500 font-semibold flex items-center justify-between">
+                        <span>🔍 點擊展開</span>
+                    </div>
+                </div>
+
+                <!-- 4. 微型社福同理心與支持 -->
+                <div onclick="openModal(4)" class="bg-white p-6 rounded-xl shadow-sm border border-stone-200 flex flex-col justify-between hover:border-rose-500 hover:shadow-md transition cursor-pointer group">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-rose-500 bg-rose-50 px-2.5 py-1 rounded-full border border-rose-100">微型社福同理心</span>
+                        </div>
+                        <h3 class="text-base font-bold text-stone-900 mt-3 group-hover:text-rose-500 transition-colors">中途志工</h3>
+                        <p class="text-stone-600 text-xs mt-2 text-justify leading-relaxed">
+                            第一線投入貓咪中途照護。在非營利組織的實際參與中，體會到資源不足、人力缺乏後勤支持的困境。這份經驗讓我能感同身受微型社福的處境，深刻認同一起夢想的使命。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-stone-100 text-[11px] text-rose-500 font-semibold flex items-center justify-between">
+                        <span>🔍 點擊展開</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Core Strengths Section -->
         <section id="experience" class="space-y-6">
             <h2 class="text-2xl font-bold text-stone-900">🎯 一起夢想核心特質對接</h2>
             <div class="space-y-4">
@@ -202,5 +290,201 @@
         <p class="mb-2">胡育群 Jean Hu | 期待加入一起夢想團隊</p>
         <p class="text-stone-600">Powered by GitHub Pages & Tailwind CSS</p>
     </footer>
+
+
+    <!-- ==================== 互動彈窗主結構 (Modals with Animation) ==================== -->
+    <div id="portfolio-modal" class="fixed inset-0 bg-stone-900/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4 modal-animate-in">
+        <div class="bg-white rounded-2xl max-w-4xl w-full overflow-hidden shadow-2xl border border-stone-100 flex flex-col max-h-[90vh] content-animate-in">
+            <!-- 彈窗頂部 
+            <div class="p-4 border-b border-stone-100 flex justify-between items-center bg-stone-50">
+                <h3 id="modal-title" class="font-bold text-stone-950 text-base">專案成果展示</h3>
+                <button onclick="closeModal()" class="text-stone-400 hover:text-stone-600 text-2xl font-bold px-2 transition-transform hover:scale-110">&times;</button>
+            </div> -->
+            
+            <!-- 圖片輪播核心區 -->
+            <div class="relative bg-stone-950 flex items-center justify-center h-150 md:h-[500px] overflow-hidden group w-full">
+                <!-- 圖片本身：改為 w-full h-full，並維持 object-contain 讓它在黑底中依比例放大、不變形 -->
+                <img id="modal-img" src="" alt="Portfolio Image" class="w-full h-full object-contain transition-opacity duration-300 opacity-100">
+                
+                <!-- 左切換按鈕 -->
+                <button onclick="prevImg()" class="absolute left-3 bg-black/40 text-white rounded-full w-9 h-9 flex items-center justify-center hover:bg-rose-500 hover:scale-105 transition shadow text-lg font-bold md:opacity-0 group-hover:opacity-100 focus:opacity-100">&lsaquo;</button>
+                <!-- 右切換按鈕 -->
+                <button onclick="nextImg()" class="absolute right-3 bg-black/40 text-white rounded-full w-9 h-9 flex items-center justify-center hover:bg-rose-500 hover:scale-105 transition shadow text-lg font-bold md:opacity-0 group-hover:opacity-100 focus:opacity-100">&rsaquo;</button>
+                
+                <!-- 頁碼標記 -->
+                <span id="modal-page-indicator" class="absolute bottom-3 bg-black/60 text-white text-[11px] px-2.5 py-0.5 rounded-full font-medium tracking-wide transition-all duration-300">1 / 3</span>
+            </div>
+
+            <!-- 圖片說明（加上平滑文字過場） -->
+            <div class="p-5 overflow-y-auto border-t border-stone-100 bg-stone-50/50">
+                <p id="modal-desc" class="text-xs text-stone-600 leading-relaxed text-justify transition-opacity duration-300 opacity-100"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==================== 互動 JavaScript 邏輯 ==================== -->
+    <script>
+        // 作品集的圖片與說明數據
+        const portfolioData = {
+            1: {
+                title: "專案管理",
+                images: [
+                    "img/board.png",
+                    "img/sprint.png",
+                    "img/gantt.png",
+                    "img/data_ex1.png",
+                    "img/data_ex2_1.png",
+                    "img/data_ex2_2.png"
+                ],
+                descs: [
+                    "【專案管理】運用數位看板將並行任務進行顆粒度拆解，達到資訊透明化。",
+                    "【專案管理】Sprint 開發流程，高效溝通、小步快跑、持續迭代。",
+                    "【專案管理】規劃跨國/跨團隊多方利益關係人的非同步協作流，確保所有項目皆能準時交付。",
+                    "【數據分析 - 實例 1】研發團隊產能瓶頸優化",
+                    "【數據分析 - 實例 2】SEG Case（Bug單）自動化管理與減量",
+                    "【數據分析 - 實例 2】SEG Case（Bug單）自動化管理與減量"
+                ]
+            },
+            2: {
+                title: "🏃‍♂️ 自媒體全軌獨立營運：方格子沙龍與影音企劃",
+                images: [
+                    "img/vocus_data.png",
+                    "img/youtube_data.png",
+                    "img/speech_1.jpg",
+                    "img/speech_2.png",
+                    "img/canada.png",
+                    "img/welfare.png",
+                ],
+                descs: [
+                    "【自媒體獨立運營 - 方格子沙龍「奎比說故事」】在無交辦環境下獨立產出 33 篇深厚議題轉譯文章。其中的作品 <a href='https://vocus.cc/article/68e9052bfd89780001102fd7' target='_blank' class='text-rose-500 font-bold underline hover:text-rose-600 ml-1'>《龜兔賽跑：不只是競爭》</a> 從傳統寓言延伸，探討台灣教育的「齊頭式平等」與職場的「競爭心態」。這份對「社會公平、競合關係與多元制度」的探索，正是一起夢想「扶持微型社福、建立非零和互助平台」的精神，與我的理念重合。",
+                    "【自媒體獨立運營 - YouTube 「蠻子與奎比躁動中」】由我一人獨立完成企劃、腳本、拍攝、剪輯與頻道營運的影片成效。累積獲得 2,500+ 次觀看，並為頻道帶入 196 小時的總觀看時間。 \n\n🎬 影片：<a href='https://www.youtube.com/watch?v=O7Hpw__usmE' target='_blank' class='text-rose-500 font-bold underline hover:text-rose-600 ml-1'>2025 澎湖四天三夜 Day 1 ｜ 老街吃...</a>",
+                    "【承接多元任務 - 趨勢科技 Experience Day 講師】除了帶領團隊改善工作流程、實踐 DevOps 文化外，更常扮演「跨域溝通與技術轉譯」角色。圖為受邀擔任官方活動講師，將生硬複雜的《大型軟體開發實務》轉譯為大眾易懂的分享。\n\n🔗 官方活動貼文：<a href='https://www.facebook.com/share/p/18t3s3rZ1A/' target='_blank' class='text-rose-500 font-bold underline hover:text-rose-600 ml-1'>趨勢科技 Trend Micro Careers Taiwan 貼文</a>",
+                    "【承接多元任務 - 大學資工系客座講師】我曾多次代表趨勢科技受邀至中央大學、成功大學、清華大學等多所大學資工系演講。圖為中央大學資工系書報討論公告，由我主講《Clean code principle 的實踐》與《Test driven development (TDD)》。這不僅驗證了我的專業技術實力，更體現我能將高度專業、抽象的軟體開發觀念，轉譯為學子易於吸收的教材與演說。這份跨域溝通與知識轉譯的軟實力，能無縫應用在為微型社福倡議、轉譯個案故事的日常任務中。",
+                    "【承接多元任務 - 兩週加拿大產品移轉與救火任務】曾臨危受命接獲緊急任務，需在兩週內與主管及另一位工程師親赴加拿大，將一整個技術產品的知識與所有權移轉回台灣。在異地的高壓與時差環境下，我展現「快速吸收與即時承接」的能力，不僅在兩週內完成技術交接，更同時高效率開發出新功能。回台後，我將技術知識結構化，分享給台灣團隊。這份在高度不確定性下「快速破局、帶回成果、落地擴散」的經驗，是我能無縫接軌微型社福多元突發任務的底氣。",
+                    "【承接多元任務 - 趨勢科技福委會活動組】除核心技術外，我亦積極參與企業文化建設。在福委會活動組期間，主導並企劃了「增肌減脂比賽」與「聖誕晚會」等多項百人大型活動，圖為籌辦聖誕晚會活動榮登《ETtoday新聞雲》財經版專題報導之合影。我善於用外向活潑的特質凝聚團隊，這讓我在面對微型社福夥伴或跨界企業資源時，具備極佳的親和力與活動串聯執行力。\n\n🔗 ETtoday 新聞報導：<a href='https://finance.ettoday.net/news/2199803' target='_blank' class='text-rose-500 font-bold underline hover:text-rose-600 ml-1'>外商吸才術！最夯技術、紮實訓練與超棒社團文化</a>"
+                ]
+            },
+            3: {
+                title: "🤖 生成式 AI 工作流重構與內容轉譯實踐",
+                images: [
+                    "img/ai_legacy_code.png",
+                    "img/ai_solution_graph.png",
+                    "img/ai_components.png",
+                    "img/make_before.png",
+                    "img/make_run_auto.png",
+                    "img/make_after.png"
+                ],
+                descs: [
+                    "【AI 工作流重構 - 龐雜且缺乏文件的舊程式碼】面對龐大、動輒數萬行的老舊專案，新成員往往需要花費數週甚至數月才能釐清系統架構。於是我們導入 AI 進行工作流重構的起點",
+                    "【AI 工作流重構 - 龐雜且缺乏文件的舊程式碼】導入 AI 流程自動解析複雜的程式碼呼叫關係，並生成直觀的系統架構。原本需要資深同仁手動梳理、耗時數天的大型專案，現在能自動在數分鐘內建立清晰地圖，讓團隊對架構一目了然。",
+                    "【AI 工作流重構 - 龐雜且缺乏文件的舊程式碼】將複雜的系統重構拆解為三個核心 AI 代理人（Agent）——結構分析、數據流追蹤與洞察分析。將技術痛點拆解為「系統化、模組化架構」，不只解決當下問題，更為團隊建立可持續、可複用的自動化工作流程。",
+                    "【AI 工作流重構 - 素材成效自動化標記系統 PoC】Google Sheets 填入新廣告素材轉換率數據",
+                    "【AI 工作流重構 - 素材成效自動化標記系統 PoC】Make 自動化工作流架構運行",
+                    "【AI 工作流重構 - 素材成效自動化標記系統 PoC】Google Sheets 自動回寫成果",
+                ]
+            },
+            4: {
+                title: "❤️ 小貓呼嚕送養中心流浪動物中途志工",
+                images: [
+                    "img/cat_1.jpg",
+                    "img/cat_2.jpg"
+                ],
+                descs: [
+                    "【中途志工】在小貓呼嚕送養中心參與日常照護",
+                    "【中途志工】在小貓呼嚕送養中心參與日常照護"
+                ]
+            }
+        };
+
+        let currentActiveId = null;
+        let currentImgIndex = 0;
+
+        function openModal(id) {
+            currentActiveId = id;
+            currentImgIndex = 0;
+            updateModalContent();
+            const modal = document.getElementById('portfolio-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden'; // 鎖定底層捲軸
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('portfolio-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = ''; // 解除鎖定
+        }
+
+        function updateModalContent() {
+            const data = portfolioData[currentActiveId];
+            if (!data) return;
+
+            const imgElement = document.getElementById('modal-img');
+            const descElement = document.getElementById('modal-desc');
+            const indicator = document.getElementById('modal-page-indicator');
+
+            // 觸發切換時的淡出淡出轉場效果
+            imgElement.style.opacity = '0.3';
+            descElement.style.opacity = '0.3';
+
+            setTimeout(() => {
+                // document.getElementById('modal-title').innerText = data.title;
+                imgElement.src = data.images[currentImgIndex];
+                
+                // 防錯機制：找不到實體圖片時更換為精美替代圖
+                imgElement.onerror = function() {
+                    this.src = "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80";
+                };
+
+                descElement.innerHTML = data.descs[currentImgIndex].replace(/\n/g, "<br>");
+                indicator.innerText = `${currentImgIndex + 1} / ${data.images.length}`;
+                
+                imgElement.style.opacity = '1';
+                descElement.style.opacity = '1';
+            }, 150);
+        }
+
+        function nextImg() {
+            const data = portfolioData[currentActiveId];
+            if (!data) return;
+            currentImgIndex = (currentImgIndex + 1) % data.images.length;
+            updateModalContent();
+        }
+
+        function prevImg() {
+            const data = portfolioData[currentActiveId];
+            if (!data) return;
+            currentImgIndex = (currentImgIndex - 1 + data.images.length) % data.images.length;
+            updateModalContent();
+        }
+
+        // 監聽鍵盤事件：左右方向鍵切換圖片，Escape 鍵關閉
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('portfolio-modal');
+            if (modal.classList.contains('hidden')) return;
+
+            if (e.key === 'ArrowRight') {
+                nextImg();
+            } else if (e.key === 'ArrowLeft') {
+                prevImg();
+            } else if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // 點擊背景關閉
+        document.getElementById('portfolio-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+
+        // 模擬工具
+        function runSimulateTool() {
+            var outputBox = document.getElementById('ai-output-box');
+            outputBox.classList.remove('hidden');
+            outputBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
 </body>
 </html>
