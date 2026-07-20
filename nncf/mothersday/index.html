@@ -6,8 +6,16 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', 'G-74R38WQKHR');
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const lineUid = urlParams.get('line_uid');
+    if (lineUid) {
+      gtag('config', 'G-74R38WQKHR', {
+        'user_id': lineUid
+      });
+    } else {
+      gtag('config', 'G-74R38WQKHR');
+    }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -128,7 +136,7 @@
               <p class="text-stone-500 text-xs leading-relaxed">支持一名患童一個月份的術後照護耗材與營養補給。</p>
             </div>
             <button class="w-full mt-6 bg-stone-900 hover:bg-stone-800 text-white text-sm font-bold py-3 rounded-xl transition"
-                    onclick="trackDonationStep('select_package', 'Single_500')">
+                    onclick="trackDonationStep('select_package', 'Single_500', 500)">
               立即單筆捐款
             </button>
           </div>
@@ -141,7 +149,7 @@
               <p class="text-stone-500 text-xs leading-relaxed">提供家庭一整年不間斷的黃金語言治療補助，全面陪伴孩子重啟自信。</p>
             </div>
             <button class="w-full mt-6 bg-rose-600 hover:bg-rose-700 text-white text-sm font-bold py-3 rounded-xl transition shadow"
-                    onclick="trackDonationStep('select_package', 'Monthly_1200')">
+                    onclick="trackDonationStep('select_package', 'Monthly_1200', 1200)">
               成為守護天使
             </button>
           </div>
@@ -159,10 +167,14 @@
       }
 
       // 捐款漏斗行為追蹤 (Donation Funnel Analysis)
-      function trackDonationStep(stepName, packageDetails) {
-          console.log(`[GA4 Funnel] 步驟: ${stepName} | 選擇方案: ${packageDetails}`);
-          // 實戰中可用於分析：點擊方案 ➔ 填寫資料 ➔ 刷卡完成 各節點的流失率
-          // gtag('event', 'begin_checkout', { 'items': [{ 'item_name': packageDetails }] });
+      function trackDonationStep(stepName, packageDetails, val) {
+          console.log(`[GA4 Funnel] 步驟: ${stepName} | 選擇方案: ${packageDetails} | 金額: ${val}`);
+          // 呼叫 GA4 標準語法，發送事件與自訂參數
+          gtag('event', stepName, {
+              'donation_package_id': packageDetails, // 自訂參數 1
+              'value': val,                          // 自訂參數 2
+              'currency': 'TWD'                      // 幣別
+          });
       }
 
       // 自動追蹤：滑動深度 (Scroll Depth) 監測，了解故事吸引度
