@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>胡育群 Jean Hu | 台灣設計研究院 TDRI 產業設計創新研究員 應徵專頁</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tdri: {
+                            teal: '#0D6E6E',       /* 設研院經典湖水綠 */
+                            tealLight: '#E8F5F5',  /* 淡湖水綠襯底 */
+                            tealHover: '#0A5555',
+                            dark: '#111827',       /* 極簡深黑 */
+                            gray: '#6B7280',       /* 說明文字灰 */
+                            border: '#E5E7EB',     /* 乾淨灰邊框 */
+                            bg: '#FAFAFA'          /* 極簡底色 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+        body { font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif; }
+    </style>
+</head>
+<body class="bg-tdri-bg text-tdri-dark leading-relaxed">
+
+    <!-- 頂部導覽列 (完全致敬 TDRI 官網樣式) -->
+    <header class="bg-white/90 backdrop-blur-md border-b border-tdri-border px-6 py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <!-- 官網風格 Logo 標頭 -->
+            <div class="flex items-center gap-4">
+                <div class="flex flex-col">
+                    <span class="text-xs font-black tracking-widest leading-none text-tdri-dark">TAIWAN DESIGN RESEARCH INSTITUTE</span>
+                    <span class="text-[10px] font-bold text-tdri-teal tracking-wider mt-1">台灣設計研究院 ｜ 應徵作品集專頁</span>
+                </div>
+            </div>
+
+            <!-- 右側連結 -->
+            <nav class="hidden md:flex items-center gap-6 text-xs font-medium text-tdri-dark">
+                <a href="#about" class="hover:text-tdri-teal transition">關於我</a>
+                <a href="#experience" class="hover:text-tdri-teal transition">核心經歷</a>
+                <a href="#research" class="hover:text-tdri-teal transition">設計研究與驗證</a>
+                <a href="mailto:yuchun801130@gmail.com" class="bg-tdri-dark hover:bg-tdri-teal text-white font-bold px-4 py-2 rounded-full transition-colors text-xs">
+                    聯絡 Jean
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 頂部 Hero 漸層 Banner (致敬官網主視覺綠藍漸層) -->
+    <section class="relative bg-gradient-to-r from-[#0D6E6E] via-[#2A9D8F] to-[#3A86C8] text-white p-8 md:p-16 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_60%)]"></div>
+        
+        <div class="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12 relative z-10">
+            <!-- 左側：文字介紹 -->
+            <div class="space-y-4 flex-1 text-center md:text-left">
+                <span class="bg-white/20 backdrop-blur-md text-white text-xs px-3.5 py-1 rounded-full font-medium tracking-wider border border-white/30">
+                    產業前瞻組 ｜ 產業設計創新研究員 應徵
+                </span>
+                <h1 class="text-3xl md:text-5xl font-black tracking-tight text-white pt-2">
+                    胡育群 Jean Hu
+                </h1>
+                <p class="text-teal-100 text-sm md:text-base font-medium tracking-wide">
+                    資工邏輯 ✕ 研發 Lead 專案控管 ✕ 數據驗證
+                </p>
+                <p class="text-white/90 max-w-2xl text-xs md:text-sm leading-relaxed text-justify font-light">
+                    具備資工背景與 10 年科技業研發與 Team Lead 實戰經驗。精通專案生命週期管理、跨部門利益關係人對齊與目標控管。兼具自媒體品牌經營與數據分析敏銳度，具備數據驗證（User Behavior Tracking, HDD假設導向），期待為 TDRI 在永續材料循環、健康照護與產業前瞻創新上注入跨領域研發能量。
+                </p>
+                <div class="pt-2 flex justify-center md:justify-start gap-3">
+                    <a href="mailto:yuchun801130@gmail.com" class="bg-white text-tdri-teal hover:bg-teal-50 font-bold px-5 py-2.5 rounded-md text-xs transition shadow-md">
+                        ✉️ 信箱聯繫
+                    </a>
+                    <a href="https://tw.linkedin.com/in/jean-hu" target="_blank" class="bg-white/10 hover:bg-white/20 text-white font-medium px-5 py-2.5 rounded-md text-xs border border-white/30 transition">
+                        🔗 LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 右側：個人頭貼 -->
+            <div class="flex-shrink-0">
+                <div class="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-white/40 shadow-2xl bg-white">
+                    <img src="../img/avatar.jpeg" alt="Jean's Portrait" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- 核心特質與歷練 -->
+        <section id="about" class="space-y-6">
+            <div class="flex items-center gap-3 border-b border-tdri-border pb-3">
+                <span class="w-1.5 h-6 bg-tdri-teal"></span>
+                <h2 class="text-xl font-bold tracking-wider text-tdri-dark">核心特質與專業定位</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-tdri-border shadow-sm space-y-2">
+                    <div class="text-tdri-teal font-bold text-sm tracking-wider uppercase">01. 科技業專案溝通與控管</div>
+                    <p class="text-tdri-gray text-xs leading-relaxed">具備研發工程師與 Team Lead 歷練，具備跨國跨部門溝通能力、時程風險管控與成效追蹤機制。</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-tdri-border shadow-sm space-y-2">
+                    <div class="text-tdri-teal font-bold text-sm tracking-wider uppercase">02. 使用者歷程</div>
+                    <p class="text-tdri-gray text-xs leading-relaxed">運用 Figma 進行使用者旅程與服務藍圖分析；並能導入 HDD（假設導向開發）驗證成效。</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-tdri-border shadow-sm space-y-2">
+                    <div class="text-tdri-teal font-bold text-sm tracking-wider uppercase">03. AI 工具與數據技術整合</div>
+                    <p class="text-tdri-gray text-xs leading-relaxed">資工背景熟悉系統架構與後端應用，能善用 AI 工具進行流程自動化、趨勢脈絡梳理與跨領域企劃輔助。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心經歷地圖 -->
+        <section id="experience" class="space-y-6">
+            <div class="flex items-center gap-3 border-b border-tdri-border pb-3">
+                <span class="w-1.5 h-6 bg-tdri-teal"></span>
+                <h2 class="text-xl font-bold tracking-wider text-tdri-dark">工作經歷 Working Experience</h2>
+            </div>
+            <div class="bg-white p-8 rounded-xl border border-tdri-border shadow-sm space-y-8">
+                
+                <!-- 趨勢科技 -->
+                <div class="flex flex-col md:flex-row gap-4 justify-between border-b border-gray-100 pb-6">
+                    <div class="md:w-1/3">
+                        <span class="text-xs font-bold text-tdri-teal bg-tdri-tealLight px-2.5 py-1 rounded">2018 - 2025</span>
+                        <h3 class="text-base font-bold text-tdri-dark mt-2">趨勢科技股份有限公司</h3>
+                        <p class="text-xs text-tdri-gray font-medium">研發主任工程師 兼 Team Lead</p>
+                    </div>
+                    <div class="md:w-2/3 space-y-2 text-xs text-tdri-gray leading-relaxed">
+                        <p class="font-semibold text-tdri-dark">▸ 主導跨國專案全生命週期管理：</p>
+                        <p>帶領研發團隊進行目標管理、進度掌控與品質確保，協調技術、產品與客戶端之跨部門溝通。</p>
+                        <p class="font-semibold text-tdri-dark">▸ 專案簡報與效益追蹤：</p>
+                        <p>負責跨團隊夥伴之專案進度簡報，嚴謹掌控資源配置與結案效益評估。</p>
+                    </div>
+                </div>
+
+                <!-- 昕力資訊與自媒體 -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h4 class="text-sm font-bold text-tdri-dark">昕力資訊 ｜ 軟體工程師</h4>
+                            <span class="text-xs text-tdri-gray">2014 - 2018</span>
+                        </div>
+                        <p class="text-xs text-tdri-gray">大型系統架構整合與研發，奠定極為嚴密的邏輯推理與問題拆解能力。</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h4 class="text-sm font-bold text-tdri-dark">自媒體品牌經營 ｜ 內容創作</h4>
+                            <span class="text-xs text-tdri-teal font-semibold">長期經營</span>
+                        </div>
+                        <p class="text-xs text-tdri-gray">獨立進行議題研究、視覺圖文與影音內容創作。</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 職缺能力對接 (針對 TDRI 產業前瞻組) -->
+        <section id="research" class="space-y-6">
+            <div class="flex items-center gap-3 border-b border-tdri-border pb-3">
+                <span class="w-1.5 h-6 bg-tdri-teal"></span>
+                <h2 class="text-xl font-bold tracking-wider text-tdri-dark">對接 核心需求</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- 1 -->
+                <div class="bg-white p-6 rounded-xl border border-tdri-border hover:border-tdri-teal transition shadow-sm space-y-3">
+                    <span class="text-xs font-mono font-bold text-tdri-teal">REQ 01</span>
+                    <h3 class="font-bold text-sm text-tdri-dark">產業議題與前期研究</h3>
+                    <p class="text-xs text-tdri-gray leading-relaxed">
+                        結合資工邏輯與 AI 工具鏈，能針對健康照護、永續材料循環進行大規模文獻掃描與標竿案例分析，運用服務藍圖與情境分析釐清產業痛點。
+                    </p>
+                </div>
+                <!-- 2 -->
+                <div class="bg-white p-6 rounded-xl border border-tdri-border hover:border-tdri-teal transition shadow-sm space-y-3">
+                    <span class="text-xs font-mono font-bold text-tdri-teal">REQ 02</span>
+                    <h3 class="font-bold text-sm text-tdri-dark">專案規劃與跨界共創</h3>
+                    <p class="text-xs text-tdri-gray leading-relaxed">
+                        擁有多年跨國研發與外部廠商溝通經驗，能扮演設計團隊、技術單位與產業夥伴之間的轉譯橋樑，確保專案進度與研究品質。
+                    </p>
+                </div>
+                <!-- 3 -->
+                <div class="bg-white p-6 rounded-xl border border-tdri-border hover:border-tdri-teal transition shadow-sm space-y-3">
+                    <span class="text-xs font-mono font-bold text-tdri-teal">REQ 03</span>
+                    <h3 class="font-bold text-sm text-tdri-dark">研究報告與數據驗證</h3>
+                    <p class="text-xs text-tdri-gray leading-relaxed">
+                        具備簡報製作與計畫報告撰寫能力。導入假設導向開發，讓設計創新研究擁有堅實的量化數據支撐。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯絡方式區塊 -->
+        <section class="bg-white p-8 rounded-xl border border-tdri-border text-center space-y-4 shadow-sm">
+            <h2 class="text-lg font-bold text-tdri-dark">以科技邏輯與設計研究，推動產業前瞻創新</h2>
+            <p class="text-tdri-gray text-xs max-w-lg mx-auto">
+                非常期待有機會親赴松山文創園區進行面談與交流！
+            </p>
+            <div class="flex justify-center flex-wrap gap-5 text-xs font-medium pt-2">
+                <a href="mailto:yuchun801130@gmail.com" class="text-tdri-dark hover:text-tdri-teal underline">✉️ Email 信箱</a>
+                <a href="https://tw.linkedin.com/in/jean-hu" target="_blank" class="text-tdri-dark hover:text-tdri-teal underline">🔗 LinkedIn</a>
+                <a href="https://vocus.cc/salon/creebie_story" target="_blank" class="text-tdri-dark hover:text-tdri-teal underline">✍️ 方格子沙龍</a>
+                <a href="https://github.com/Yu-ChunHu" target="_blank" class="text-tdri-dark hover:text-tdri-teal underline">💻 GitHub</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-tdri-border py-8 text-center text-xs text-tdri-gray">
+        <p class="font-medium text-tdri-dark mb-1">胡育群 Jean Hu | 台灣設計研究院 TDRI 產業設計創新研究員 應徵專頁</p>
+        <p class="text-[10px] text-gray-400">Design inspired by Taiwan Design Research Institute Official Website</p>
+    </footer>
+
+</body>
+</html>
